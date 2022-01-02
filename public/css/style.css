@@ -1,12 +1,37 @@
 :root {
-    --custom-primary-dark: #303b8a;
-    --custom-primary: #485bd8;
+    --custom-primary-dark: #243183;
+    --custom-primary: #394cd1;
     --custom-secondary-dark: #6c6c6c;
     --custom-secondary: #b7b7b7;
 }
 
+#navbar{
+    height: 75px; 
+    background-color: var(--custom-primary);
+}
+
+#sidebar-wrapper{
+    background-color: var(--custom-primary-dark);
+}
+
+.navbar-collapse li{
+    border-width: 1px 0;
+    border-color: #5864b7;
+    border-style: solid;
+}
+.navbar-collapse li > a{
+    text-decoration: none;
+}
+.navbar-collapse li.active{
+    /* font-weight: bold; */
+    background-color: #495bda;
+}
+.navbar-collapse li.active > a{
+    font-weight: bold;
+}
+
 .table-custom>thead {
-    background-color: #495bd9;
+    background-color: var(--custom-primary);
     color: white;
     height: 70px;
 }
@@ -14,6 +39,17 @@
 .table-custom>tbody>tr td {
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.modal-custom .modal-header{
+    background-color: var(--custom-primary);
+    color: white;
+    padding: 0.6rem 1rem;
+}
+
+.modal-custom .modal-content{
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .btn-custom-primary {

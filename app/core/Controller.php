@@ -19,4 +19,11 @@ class Controller
         require_once "../app/models/$model.php";
         return new $model;
     }
+
+    protected function checkLogin()
+    {
+        if (!isset($_SESSION['user_id'])) {
+            header('Location:' . BASE_URL . 'login');
+        }
+    }
 }

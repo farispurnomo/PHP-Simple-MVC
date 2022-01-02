@@ -11,14 +11,17 @@
     <li>Pindah Project ini ke folder htdocs / sejenisnya</li>
     <li>Import database yang terdapat di dalam folder <code>./db</code></li>
     <li>Sesuaikan konfigurasi aplikasi yang terdapat di dalam file <code>./config/Common.php</code> dengan server anda</li>
+    <li>Login default: <br>
+        id pengguna: <strong>admin</strong> <br>
+        kata sandi: <strong>admin</strong></li>
 </ol>
 
 <br>
 
 >## Screenshot
+<img src="./docs/screenshot/login.png" alt="index"/>
 <img src="./docs/screenshot/index.png" alt="index"/>
-<img src="./docs/screenshot/create.png" alt="create"/>
-<img src="./docs/screenshot/edit.png" alt="edit"/>
+<img src="./docs/screenshot/form.png" alt="form"/>
 
 <br>
 

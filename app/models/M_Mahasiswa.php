@@ -17,6 +17,7 @@ class M_Mahasiswa
             $query .= ' AND nim LIKE :search';
             $query .= ' OR nama LIKE :search ';
         }
+        $query .= ' ORDER BY nama ';
         $query .= ' LIMIT :offset, :limit ';
 
         $this->db->query($query);

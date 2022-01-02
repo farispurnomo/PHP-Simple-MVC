@@ -6,6 +6,9 @@ class Mahasiswa extends Controller
     public function __construct()
     {
         $this->mahasiswa = $this->model('M_Mahasiswa');
+
+        // usir jika belum login
+        $this->checkLogin();
     }
 
     public function index()

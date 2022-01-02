@@ -1,4 +1,4 @@
-<section class="row mt-3">
+<section class="row">
     <div class="col-12">
         <h4>Data Mahasiswa</h4>
     </div>
@@ -30,6 +30,23 @@
     </div>
 </section>
 
+<div class="modal fade modal-custom" id="modal-delete" tabindex="-1">
+    <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title font-italic">Hapus Data?</div>
+            </div>
+            <div class="modal-body py-4">
+                <div class="text-center">Konfirmasi untuk menghapus <br /> data ini ?</div>
+                <div class="text-center pt-4">
+                    <a href="#" type="button" id="modal-ok" class="btn btn-custom-primary">OK</a>
+                    <button type="button" class="btn btn-custom-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     function renderTable(page = 1) {
         const search = $('#search').val()
@@ -54,5 +71,11 @@
 
     $(document).ready(function() {
         renderTable()
+
+        $(document).on('click', '.delete-item', function() {
+            $('#modal-delete').modal('show')
+            const href = $(this).data('href')
+            $('#modal-ok').attr('href', href)
+        })
     })
 </script>

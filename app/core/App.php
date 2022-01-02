@@ -4,7 +4,7 @@
 class App
 {
     // atur default controller
-    protected $controller = 'Mahasiswa';
+    protected $controller = 'Login';
     protected $method = 'index';
     protected $params = [];
 
