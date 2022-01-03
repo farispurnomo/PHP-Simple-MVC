@@ -1,4 +1,4 @@
-<section class="row my-3">
+<section class="row">
     <div class="col-12">
         <h4>Form Sunting Data Mahasiswa</h4>
     </div>

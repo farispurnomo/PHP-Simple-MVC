@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Mahasiswa</title>
+    <title>Demo CRUD</title>
 
     <link rel="stylesheet" href="<?= BASE_URL ?>vendor/bootstrap-5.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>vendor/font-awesome/css/font-awesome.min.css">
@@ -46,15 +46,13 @@
                     <div class="collapse navbar-collapse sidebar w-100">
                         <ul class="flex-column navbar-nav w-100 justify-content-between list-unstyled w-100 mb-5">
                             <li class="py-2 ps-4 ">
-                                <a class="text-white side-menu " href="<?= BASE_URL . 'mahasiswa' ?>">
-                                    <div class="side-menu__icon"></div>
-                                    <div class="side-menu__title ">Mahasiswa</div>
+                                <a class="text-white " href="<?= BASE_URL . 'mahasiswa' ?>">
+                                    <div>Mahasiswa</div>
                                 </a>
                             </li>
                             <li class="py-2 ps-4 ">
-                                <a class="text-white side-menu " href="<?= BASE_URL . 'user' ?>">
-                                    <div class="side-menu__icon"></div>
-                                    <div class="side-menu__title ">Pengguna</div>
+                                <a class="text-white " href="<?= BASE_URL . 'user' ?>">
+                                    <div>Pengguna</div>
                                 </a>
                             </li>
                         </ul>
@@ -62,7 +60,7 @@
                 </nav>
             </aside>
 
-            <article class="col-md-10 bg-faded py-3">
+            <article class="col-md-10 bg-faded p-4">
                 <?= $data['content'] ?>
             </article>
 

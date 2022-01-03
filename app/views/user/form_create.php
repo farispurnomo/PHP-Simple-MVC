@@ -16,7 +16,7 @@
     <div class="col-md-6">
         <form action="<?= BASE_URL . 'user/store' ?>" method="post" enctype="multipart/form-data">
             <div class="row mb-3">
-                <label for="edtUserId" class="col-sm-2 col-form-label">ID Pengguna</label>
+                <label for="edtUserId" class="col-sm-2 col-form-label">ID</label>
                 <div class="col-sm-10">
                     <input type="text" maxlength="50" id="edtUserId" class="form-control" name="id" value="<?= FlashData::getMessage('id') ?>" required>
                 </div>
